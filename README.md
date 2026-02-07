@@ -102,7 +102,7 @@
 ---
 
 ## Competition !!!
-Check [here](https://github.com/Mubarraqqq/gnn-challenge/blob/main/CONTRIBUTING.md) to participate in this niche challenge
+Check [here](https://github.com/TugaAhmed/test_mub_cha/blob/main/CONTRIBUTING.md) to participate in this niche challenge
 
 ## 📝 Citation
 
@@ -113,7 +113,8 @@ If you use this challenge or dataset in your research, please cite:
   title={GNN Challenge: cfRNA → Placenta Inductive GNN for Maternal-Fetal Health Prediction},
   author={Mubaraq Onipede},
   year={2026},
-  url={https://github.com/Mubarraqqq/gnn-challenge}
+  url={https://github.com/TugaAhmed/test_mub_cha}
+
 }
 ```
 
