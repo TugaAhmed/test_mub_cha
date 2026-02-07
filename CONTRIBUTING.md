@@ -1,6 +1,6 @@
 # Contributing Submissions to GNN Challenge
 
-This [repository](https://github.com/Mubarraqqq/gnn-challenge) accepts **prediction files only**. No participant code is executed.
+This [repository](https://github.com/TugaAhmed/test_mub_cha) accepts **prediction files only**. No participant code is executed.
 
 ## Quick Start (External Participants)
 
@@ -88,7 +88,7 @@ predictions.to_csv("predictions.csv", index=False)
 ---
 ## Leaderboard
 
-Your submission can be viewed [here](https://mubarraqqq.github.io/gnn-challenge/leaderboard.html) after PR has been merged by the [organizer](www.github.com/mubarraqqq)
+Your submission can be viewed [here](https://TugaAhmed.github.io/test_mub_cha/leaderboard.html) after PR has been merged by the [organizer](www.github.com/TugaAhmed)
 
 ---
 
