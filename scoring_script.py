@@ -141,13 +141,13 @@ def evaluate_submission(submission_path, ground_truth_path=None):
     submission = pd.read_csv(submission_path)
 
     # Normalize expected columns
-    # if "id" in submission.columns and "y_pred" in submission.columns:
-    #     submission = submission.rename(columns={"id": "node_id", "y_pred": "target"})
-    # elif "node_id" in submission.columns and "target" in submission.columns:
-    #     pass
-    # else:
-    #     print("❌ Submission must have either ['id','y_pred'] or ['node_id','target'] columns")
-    #     return None
+    if "id" in submission.columns and "y_pred" in submission.columns:
+        submission = submission.rename(columns={"id": "node_id", "y_pred": "target"})
+    elif "node_id" in submission.columns and "target" in submission.columns:
+        pass
+    else:
+        print("❌ Submission must have either ['id','y_pred'] or ['node_id','target'] columns")
+        return None
     
     # Check if ground truth available
     if ground_truth_path is None:
@@ -160,8 +160,7 @@ def evaluate_submission(submission_path, ground_truth_path=None):
     ground_truth = pd.read_csv(ground_truth_path)
     
     # Merge on node_id
-    # merged = pd.merge(ground_truth, submission, on='node_id', suffixes=('_true', '_pred'))
-    merged = pd.merge(ground_truth, submission, on='id', suffixes=('_true', '_pred'))
+    merged = pd.merge(ground_truth, submission, on='node_id', suffixes=('_true', '_pred'))
     
     if len(merged) == 0:
         print("❌ No matching node_ids between submission and ground truth")

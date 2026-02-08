@@ -1,4 +1,4 @@
-id,y_pred
+node_id,target
 placenta_0,0
 placenta_1,0
 placenta_2,0
